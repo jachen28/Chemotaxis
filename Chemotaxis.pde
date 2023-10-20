@@ -1,7 +1,7 @@
 Bacteria[] bob;
 void setup() {
   size(400,400);
-   bob = new Bacteria[20];
+   bob = new Bacteria[10];
   for(int i = 0; i < bob.length; i++){
     bob[i] = new Bacteria();
   }
@@ -17,6 +17,8 @@ for(int i = 0; i < bob.length; i++){
 }
 
 
+
+
 class Bacteria {
   int myX, myY, bColor;
   Bacteria() {
@@ -28,25 +30,25 @@ bColor = color((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.ra
 
 
 void move() {
-  if(mouseX > myX) 
+  if(mouseX > myX)
    myX = myX + (int)(Math.random()*5-1);
-   else 
+   else
    myX = myX + (int)(Math.random()*5-4);
-  
-  if(mouseY > myY) 
+ 
+  if(mouseY > myY)
    myY = myY + (int)(Math.random()*5-1);
-   else 
+   else
    myY = myY + (int)(Math.random()*5-4);
-  
-  
-  
-  
-  
-  
-  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   }
   void show(){
-  noStroke();
+   noStroke();
   fill(bColor);
   ellipse(myX, myY, 25, 25);
   fill(255,0,0);
@@ -59,8 +61,14 @@ void move() {
   ellipse(100,100,75,75);
     fill(255,0,0);
   ellipse(300,150,75,75);
-  
-  
-  
+ 
+ 
+ 
+ 
   }
-  
+ 
+  void mousePressed() {
+   
+}
+
+}
