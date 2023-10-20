@@ -17,10 +17,6 @@ for(int i = 0; i < bob.length; i++){
 }
 
 
-void mousePressed() {
-  redraw();
-  }
-
 class Bacteria {
   int myX, myY, bColor;
   Bacteria() {
